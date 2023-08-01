@@ -27,10 +27,10 @@ python main.py --config configuration/config.yml
 
 ## Citation
 ```
-@article{Fauvel23LEXNet,
+@inproceedings{Fauvel23LEXNet,
   author = {Fauvel, K. and F. Chen and D. Rossi},
   title = {{A Lightweight, Efficient and Explainable-by-Design Convolutional Neural Network for Internet Traffic Classification}},
-  journal = {Proceedings of the 29th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
-  year = {2023},
+  booktitle = {Proceedings of the 29th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  year = {2023}
 }
 ```
