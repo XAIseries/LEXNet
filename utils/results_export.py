@@ -104,19 +104,25 @@ def export_results(
 
     # Export results
     results_export = pd.DataFrame()
-    results_export = results_export.append(
+    results_export = pd.concat(
         [
-            [
-                configuration["dataset"],
-                configuration["model_name"],
-                X_train.shape,
-                X_validation.shape,
-                X_test.shape,
-                acc_train,
-                acc_validation,
-                acc_test,
-            ]
-        ]
+            results_export,
+            pd.DataFrame(
+                [
+                    [
+                        configuration["dataset"],
+                        configuration["model_name"],
+                        X_train.shape,
+                        X_validation.shape,
+                        X_test.shape,
+                        acc_train,
+                        acc_validation,
+                        acc_test,
+                    ]
+                ]
+            ),
+        ],
+        axis=0,
     )
     results_export.columns = [
         "Dataset",

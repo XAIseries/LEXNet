@@ -3,7 +3,7 @@ This repository contains the Python implementation of LEXNet as described in
 the paper [A Lightweight, Efficient and Explainable-by-Design Convolutional Neural Network for Internet Traffic Classification](https://arxiv.org/pdf/2202.05535).
 
 <p align="center">
-<img src="/images/class_prototypes_application1.png" width="60%">
+<img src="/images/class_prototypes_application1.png" width="50%">
 </p>
 
 ## Requirements
